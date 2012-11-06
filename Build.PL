@@ -7,13 +7,17 @@ my $build = Module::Build->new(
     dynamic_config       => 0,
 
     build_requires       => {
-        'Test::More' => '0.98',
+        'Test::More'     => '0.98',
         'Test::Requires' => 0,
+        'Test::Stub'     => 0,
+        'Test::Should'   => 0,
     },
     configure_requires   => { 'Module::Build' => '0.38' },
     requires             => {
-        perl   => "$]",
-        parent => '0',
+        perl             => '5.008008',
+        parent           => 0,
+        JSON             => 0,
+        'LWP::UserAgent' => 0,
     },
 
     no_index    => { 'directory' => [ 'inc' ] },
@@ -28,12 +32,5 @@ my $build = Module::Build->new(
     create_readme  => 1,
     create_license => 1,
 );
-$build->meta_add({
-    resources => {
-        X_prepan => {
-            module_url => 'http://prepan.org/module/xxxxx',
-            author_url => 'http://prepan.org/user/xxxxxxx',
-        },
-    },
-});
+
 $build->create_build_script();
