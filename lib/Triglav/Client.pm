@@ -173,10 +173,6 @@ L<http://github.com/kentaro/triglav>
 This module is in alpha stage. You should be conscious about the
 changes of this module and API spec.
 
-=head1 AUTHOR
-
-Kentaro Kuribayashi E<lt>kentarok@gmail.comE<gt>
-
 =head1 REPOSITORY
 
 =over 4
@@ -202,6 +198,10 @@ L<https://github.com/kentaro/triglav-client-perl>
 L<http://github.com/kentaro/triglav>
 
 =back
+
+=head1 AUTHOR
+
+Kentaro Kuribayashi E<lt>kentarok@gmail.comE<gt>
 
 =head1 LICENSE
 
