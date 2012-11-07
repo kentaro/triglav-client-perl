@@ -29,13 +29,13 @@ describe 'Triglav::Client' => sub {
     };
 
     context 'when only `base_url` is passed' => sub {
-        (sub { Triglav::Client->new })->should_throw(
+        (sub { Triglav::Client->new(base_url => 'http://example.com/') })->should_throw(
             qr/Both `base_url` and `api_token` are required/
         );
     };
 
     context 'when `api_token` is passed' => sub {
-        (sub { Triglav::Client->new })->should_throw(
+        (sub { Triglav::Client->new(api_token => 'xxxxxxxxxxxxxxxxxx') })->should_throw(
             qr/Both `base_url` and `api_token` are required/
         );
     };
@@ -173,8 +173,8 @@ done_testing;
 
 sub client () {
     Triglav::Client->new(
-        base_url => 'http://example.com/',
-        api_token => 'xxxxxxxxxx',
+        base_url  => 'http://example.com/',
+        api_token => 'xxxxxxxxxxxxxxxxxxx',
     );
 }
 
