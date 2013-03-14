@@ -62,7 +62,7 @@ sub hosts {
             else {
                 $_->{active}
             }
-        } map { $_->{host} } @$response
+        } @$response
     ];
 }
 
@@ -87,7 +87,7 @@ sub hosts_in {
             else {
                 $_->{active}
             }
-        } map { $_->{host} } @$response
+        } @$response
     ];
 }
 
