@@ -194,8 +194,8 @@ sub roles () {
 
 sub hosts () {
     [
-        { host => { id => 1, active => 1 } },
-        { host => { id => 2, active => 0 } },
-        { host => { id => 2, active => 1 } },
+        { id => 1, active => 1 },
+        { id => 2, active => 0 },
+        { id => 2, active => 1 },
     ]
 }
