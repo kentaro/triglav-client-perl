@@ -1,5 +1,8 @@
 Revision history for Perl extension Triglav::Client
 
+0.03    Thu Mar 14 17:46:50 2013
+    - More fixes along with API changes
+
 0.02    Thu Mar 14 17:46:50 2013
     - Changed client along with API updates
 

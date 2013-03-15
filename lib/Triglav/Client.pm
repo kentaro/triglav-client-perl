@@ -4,7 +4,7 @@ use warnings;
 use Carp qw(croak);
 
 use 5.008008;
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use URI;
 use URI::QueryParam;
@@ -156,7 +156,8 @@ Triglav::Client - A Perl Interface to Triglav API
 
 =head1 DESCRIPTION
 
-Triglav::Client is a Perl interface to Triglav API.
+Triglav is a server management tool. This module is a Perl interface
+to its API.
 
 L<http://github.com/kentaro/triglav>
 
