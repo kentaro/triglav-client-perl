@@ -180,15 +180,15 @@ sub client () {
 
 sub services () {
     [
-      { service => { id => 1 } },
-      { service => { id => 2 } },
+        { id => 1 },
+        { id => 2 },
     ]
 }
 
 sub roles () {
     [
-        { role => { id => 1 } },
-        { role => { id => 2 } },
+        { id => 1 },
+        { id => 2 },
     ]
 }
 
